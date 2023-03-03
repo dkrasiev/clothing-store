@@ -4,16 +4,19 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="h-12 bg-black flex justify-center text-white">
-      <img height="64px" width="64px" src={logo} alt="logo" />
+    <header className="h-16 flex justify-center border-b">
+      <img src={logo} alt="logo" />
 
-      <div className="flex items-center mx-auto  ">
+      <div className="flex items-center mx-auto children:px-2">
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
         <Link to="/pages">Pages</Link>
       </div>
 
-      <div></div>
+      <div className="children:px-2 flex">
+        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" />
+      </div>
     </header>
   );
 };
