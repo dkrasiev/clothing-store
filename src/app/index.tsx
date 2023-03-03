@@ -7,9 +7,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className="container">
-        <Routing />
-      </div>
+      <Routing />
     </>
   );
 };
