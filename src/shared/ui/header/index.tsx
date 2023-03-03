@@ -7,13 +7,13 @@ const Header = () => {
     <header className="h-16 flex justify-center border-b">
       <img src={logo} alt="logo" />
 
-      <div className="flex items-center mx-auto children:px-2">
-        <Link to="/">Home</Link>
-        <Link to="/shop">Shop</Link>
-        <Link to="/pages">Pages</Link>
-      </div>
+      <section className="flex items-center children:px-2 children:text-center mx-auto children:h-full children:flex children:children:my-auto">
+        <Link to="/"><span>Home</span></Link>
+        <Link to="/shop"><span>Shop</span></Link>
+        <Link to="/pages"><span>Pages</span></Link>
+      </section>
 
-      <div className="children:px-2 flex">
+      <div className="flex">
         <img src={logo} alt="logo" />
         <img src={logo} alt="logo" />
       </div>
